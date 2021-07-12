@@ -15,4 +15,4 @@ async def on_message(message):
     if message.content.startswith('Player Name Check'):
         await message.channel.send('<@208343913260384258>')
 
-client.run(os.getenv('ODY0MDA5Mzc5NzUzNzU0NjI0.YOvNcA.DIz7L-hY0y-n-r7HojMJJXu4qkY'))
+client.run(os.getenv('TOKEN'))
