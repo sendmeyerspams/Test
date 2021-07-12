@@ -1,0 +1,18 @@
+import discord
+import os
+
+client = discord.Client()
+
+@client.event
+async def on_ready():
+    print('We have logged in as {0.user}'.format(client))
+
+@client.event
+async def on_message(message):
+    if message.author == client.user:
+        return
+
+    if message.content.startswith('Player Name Check'):
+        await message.channel.send('<@208343913260384258>')
+
+client.run(os.getenv('ODY0MDA5Mzc5NzUzNzU0NjI0.YOvNcA.DIz7L-hY0y-n-r7HojMJJXu4qkY'))
