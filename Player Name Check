@@ -12,7 +12,10 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content.startswith('Player Name Check'):
-        await message.channel.send('<@208343913260384258>')
+   if message.author.id == BotID: 864009379753754624
+    aa = 0
+            embeds = message.embeds # return list of embeds
+            for embed in embeds:
+                ts= embed.to_dict()
 
 client.run(os.getenv('TOKEN'))
